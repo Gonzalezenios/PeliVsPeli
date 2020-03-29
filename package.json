@@ -1,0 +1,28 @@
+{
+  "name": "gonzalezenio-pelivspeli",
+  "version": "1.0.0",
+  "description": "guerra de peliculas",
+  "main": "\t",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalezenios/PeliVsPeli.git"
+  },
+  "keywords": [
+    "ES"
+  ],
+  "author": "Enio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzalezenios/PeliVsPeli/issues"
+  },
+  "homepage": "https://github.com/Gonzalezenios/PeliVsPeli#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
