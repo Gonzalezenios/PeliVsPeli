@@ -2,9 +2,9 @@
   "name": "gonzalezenio-pelivspeli",
   "version": "1.0.0",
   "description": "guerra de peliculas",
-  "main": "\t",
+  "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
