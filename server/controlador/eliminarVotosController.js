@@ -26,5 +26,5 @@ const eliminarVotos = (req, res) => {
 };
 
 module.exports = {
-    eliminarVotos = eliminarVotos
+    eliminarVotos: eliminarVotos
 };

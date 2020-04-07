@@ -47,7 +47,7 @@ app.put('/competencias/:id', contEditarComp.editarCompetencia);
 
 
 //Seteamos el puerto para que la app escuche los pedidos
-const puerto = '8000';
+const puerto = '8080';
 
 app.listen(puerto, () => {
     console.log("Escuchando pedidos en el puerto " + puerto);
