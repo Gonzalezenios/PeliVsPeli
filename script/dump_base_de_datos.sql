@@ -112,6 +112,7 @@ CREATE TABLE `competencia` (
 );
 
 
+
 CREATE TABLE `voto` (
   `id` INT (11) NOT NULL AUTO_INCREMENT,
   `pelicula_id` INT (11) unsigned NOT NULL,
@@ -120,3 +121,16 @@ CREATE TABLE `voto` (
   FOREIGN KEY (`pelicula_id`) REFERENCES `pelicula` (`id`),
   FOREIGN KEY (`competencia_id`) REFERENCES `competencia` (`id`)
 );
+
+ALTER TABLE voto add FOREIGN KEY (pelicula_id) REFERENCES pelicula(id);
+
+ALTER TABLE voto add FOREIGN KEY (competencia_id) REFERENCES competencia(id);
+
+ALTER TABLE competencia ADD COLUMN genero_id INT (11) UNSIGNED, ADD FOREIGN KEY (genero_id) REFERENCES genero(id);
+
+ALTER TABLE competencia ADD COLUMN director_id INT (11) UNSIGNED, ADD FOREIGN KEY (director_id) REFERENCES director(id);
+
+ALTER TABLE competencia ADD COLUMN actor_id INT (11) UNSIGNED, ADD FOREIGN KEY (actor_id) REFERENCES actor(id);
+
+INSERT INTO competencia (nombre) VALUES ('¿Cuál crees que es la mejor película?'), ('¿Qué pelicula de drama te hizo llorar?'), ('¿Cuál es la película más pochoclera?'), ('¿Mejor comedia por lejos?'), ('¿Película para acompañar un día de lluvia?'), ('¿Cúal película de terror te asustó más?'), ('¿Mejor thriller?');
+

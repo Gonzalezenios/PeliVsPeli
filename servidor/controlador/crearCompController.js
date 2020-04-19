@@ -54,7 +54,6 @@ const crearCompetencia = (req, res) => {
                     return res.status(500).send("Hubo un error en la consulta!")
                 };
 
-
                 //De no encontrar error, se envia la respuesta
                 res.send(JSON.stringify(resultado));
             })

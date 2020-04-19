@@ -11,7 +11,7 @@ const listarCompetencias = (req, res) => {
             return res.status(500).send("Hubo un error en la consulta.");
         };
         // Si no hubo ningún error, se envía la respuesta con todas las competencias existentes. //
-        res.send(JSON.stringify(resultado));
+        res.send(resultado);
     })
 };
 

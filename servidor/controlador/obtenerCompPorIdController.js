@@ -3,7 +3,7 @@ const con = require('../lib/dbconnection');
 const obtenerCompetenciaPorId = (req, res) => {
     let idCompetencia = req.params.id; //Se obtiene el id de la competencia deseada
 
-    let sql = `SELECT competencia.id, competencia.nombre , genero.nombre AS genero, director.nombre AS director, actor.nombre AS actor FROM competencia LEFT JOIN genero ON genero_id = genero.id LEFT JOIN director ON director_id= director.id LEFT JOIN actor ON actor_id = actor.id WHERE competencia.id = ${idCompetencia};`
+    let sql = `SELECT competencia.id, competencia.nombre, genero.nombre AS genero, director.nombre AS director, actor.nombre AS actor FROM competencia LEFT JOIN genero ON genero_id = genero.id LEFT JOIN director ON director_id= director.id LEFT JOIN actor ON actor_id = actor.id WHERE competencia.id = ${idCompetencia};` 
 
     //Se realiza la consulta
     con.query(sql, (error, resultado, fields) => {

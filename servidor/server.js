@@ -36,15 +36,12 @@ app.get('/directores', contObtDirectores.obtenerDirectores);
 app.post('/competencias/:id/voto', contGuardarVotos.guardarVotos);
 app.post('/competencias', contCrearComp.crearCompetencia);
 
-
 //Pedidos DELETE de cada ruta
 app.delete('/competencias/:id/votos', contElimVotos.eliminarVotos);
 app.delete('/competencias/:id', contElimComp.eliminarCompetencia);
 
-
 //Pedidos PUT de cada ruta
 app.put('/competencias/:id', contEditarComp.editarCompetencia); 
-
 
 //Seteamos el puerto para que la app escuche los pedidos
 const puerto = '8080';

@@ -4,7 +4,7 @@
   "description": "guerra de peliculas",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node ./servidor/server.js"
   },
   "repository": {
     "type": "git",
