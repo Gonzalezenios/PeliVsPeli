@@ -2,9 +2,10 @@
   "name": "gonzalezenio-pelivspeli",
   "version": "1.0.0",
   "description": "guerra de peliculas",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./servidor/server.js"
+    "start": "node ./servidor/server.js",
+    "dev": "nodemon ./servidor/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.2"
   }
 }
